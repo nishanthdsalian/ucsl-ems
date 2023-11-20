@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../style/style--index.css">   
+	<title>UCSL EMS</title>
+</head>
+
+<body>
+<div class="box-login">
+	<div class="logo-cont c-flex">
+				<img class="img--ucsl" src="../source/logo--ucsl.svg">
+		<!--
+			<div style="">
+				<span class="tebma-big">TEBMA</span>
+				<span class="tebma-small">SHIPYARDS LTD</span>  
+			</div>
+		-->
+
+	</div>
+
+	<div id="notification-bar" class="notification-cont" style="grid-column:2/3; background:rgba(0,170,0,0.8); color:white; display:none;">
+
+		<div id="notification-heading" class="c-flex notification-head"></div>
+		<div class="notification-body">
+			<img id="notification-img" class="c-block img-size-5 img-notification">
+			<div id="notification-text" class="notification-text"></div>
+		</div>
+		<div class="c-flex">
+			<div id="notification-btn" class="c-flex notification-btn-2"></div>
+			<div id="notification-btn-close" class="c-flex notification-btn-2"></div>
+		</div>
+	</div>
+
+	<div class="c-flex">
+
+		<form id="form" class="login-cont form-cont c-flex-col">
+			<div class="login-tile" style="">
+				<label>Host IP/Name</label>
+				<input type="text" name="db-hostname">
+			</div>
+
+			<div class="login-tile">
+			    <label>Port</label>
+			    <input type="number" name="db-port">
+			</div>
+
+			<div class="login-tile">
+			    <label>DB User Name</label>
+			    <input type="text" name="db-username">
+			</div>
+
+			<div class="login-tile">
+			    <label>DB Password</label>
+			    <input type="password" name="db-password">
+			</div>
+			
+			<div class="login-tile">
+			    <label>Database Name</label>
+			    <input type="text" name="db-name">
+			</div>
+			
+
+			<div class="c-flex">
+			    <input class="btn-login" id="" type="submit" name="submit" value="Submit">
+			</div>
+			
+			<div class="c-flex">
+			    <button class="btn-login" id="btn-back">Back</button>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="c-flex">
+		<img class="img--ncode-credit" src="../source/logo-ddncode-blue.svg">
+	</div>
+
+</div>
+</body>
+
+<script >
+	require("../script/script--settings.js")
+</script>
+</html>

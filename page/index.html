@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../style/style--index.css">   
+	<title>UCSL EMS</title>
+</head>
+
+<body>
+
+<div id="loader" class="loader">
+	<img id="img-loader" src="../source/logo--ucsl.svg" height="150px">
+</div>
+
+<div id="progress-loader" class="progress-loader" style="display: none;">
+	<img id="img-loader" src="../source/logo--ucsl.svg" height="150px">
+</div>
+
+<div class="body-app" id="body-app">
+	<div class="info-cont">
+		<div class="info-tile">
+			<div class="c-flex info-label">DEPARTMENT</div>
+			<div class="info-desc" id="user-dept">CONTRACT CELL</div>
+		</div>
+
+		<div class="info-tile">
+			<div class="c-flex info-label">ROLE</div>
+			<div class="info-desc" id="user-role">ADMIN</div>
+		</div>
+
+		<div class="info-tile">
+			<div class="c-flex info-label">DATE</div>
+			<div class="info-desc" id="date">18.08.1656</div>
+		</div>
+
+		<div class="info-tile">
+			<div class="c-flex info-label">LOCATION</div>
+			<div class="info-desc" id="user-location"></div>
+		</div>
+
+		<div class="ctrl-tile">
+			<div class="btn-info c-flex"><img class="img-size-tile" src="../source/logo--info.svg" id="btn-info"></div>
+			<div class="btn-info c-flex"><img class="img-size-tile" src="../source/logo--user.svg" id="btn-user"></div>
+			<div class="btn-info c-flex"><img class="img-size-tile" src="../source/logo--logout.svg" id="btn-logout"></div>
+		</div>
+
+
+
+
+	<div id="notification-bar" class="notification-cont" style="grid-column:2/3; background:rgba(0,170,0,0.8); color:white; display:none;">
+
+		<div id="notification-heading" class="c-flex notification-head"></div>
+		<div id="notification-error-info-toggle" class="btn-error-info-toggle" style="display:none;">More Info</div>
+		<div class="notification-body">
+			<img id="notification-img" class="c-block img-size-5 img-notification">
+			<div id="notification-text" class="notification-text"></div>
+			<div id="notification-more-info" class="notification-text" style="display:none"></div>
+		</div>
+		<div class="c-flex">
+			<div id="notification-btn" class="c-flex notification-btn-2"></div>
+			<div id="notification-btn-close" class="c-flex notification-btn-2"></div>
+			<div id="notification-btn-info" class="c-flex notification-btn-2" style="display:none"></div>
+		</div>
+	</div>
+
+
+	</div>
+
+	<div class="display-section"  style="">
+
+		<div class="display-cont" id="display">
+<!--
+			<div class="display-title" id="title">
+				CONTRACTOR 
+			</div>
+
+			<div class="display">
+
+			</div>
+-->
+		</div>
+
+
+	</div>
+
+</div>
+</body>
+
+
+
+<script src="../script/script--index.js">
+
+
+	//require("../script/script--index.js")
+
+
+</script>
+
+
+</html>

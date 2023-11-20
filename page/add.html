@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../style/style--index.css">   
+	<title>UCSL EMS</title>
+</head>
+<body>
+
+<div class="box-2">
+<h1 class="c-flex">Add Contractor</h1>
+
+<div class="input-cont">
+
+	<div class="c-flex text-input" style="">
+
+		<form id="input-form" class="form-cont"> 
+
+		<label for="name">Name</label>
+		<input id="form-name" type="text" name="name">
+
+		<label for="dob">Date of Birth</label>
+		<input id="form-dob" type="date" name="dob">
+
+		<label for="id">Contractor ID</label>
+		<input id="form-id" type="text" name="id">
+
+		<label for="contractor-name">Contractor Name</label>
+		<input id="form-contractor-name" type="text" name="contractor-name">
+
+		</form>
+	</div>
+
+
+	<div class="image-input c-flex" style="">
+
+		<div class="img-box c-flex-col c-block"> 
+			<canvas id="canvas" class="canvas-add" heigth="320" width="250" style="display: none;"></canvas>
+			<video id="video" heigth="768" width="600" class="img-area"></video>
+			<img id="img-person" class="img-area" style="display: none;">
+			<button id="img-capture" class="btn-std-2">START CAPTURE</button>
+			<button id="img-capture-reset" class="btn-std-2">CAPTURE AGAIN</button>
+			<input id="img-input" type="file" style="display: none;">
+			<button id="img-upload" class="btn-std-2">UPLOAD IMAGE</button>
+		</div>
+	</div>
+
+
+</div>
+
+<div class="c-flex btn-cont">
+	<button class="btn-std" id="btn-add">Add</button>
+</div>
+
+</div>
+
+</body>
+<script>
+	require("../script/script--add.js")
+</script>
+
+</html>

@@ -1,0 +1,4 @@
+appId:com.ncodemedia.ucslems
+publish:
+  provider: github
+  token:

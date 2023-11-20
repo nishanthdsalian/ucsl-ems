@@ -1,0 +1,55 @@
+{
+  "name": "ucslems",
+  "productName": "UCSL EMS",
+  "version": "0.0.9",
+  "author": "Ncode Media",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nishanthdsalian/ucsl-ems.git"
+  },
+  "main": "main.js",
+  "description": "UCSL EMS",
+  "scripts": {
+    "start": "electron .",
+    "build-installer": "electron-builder",
+    "build-installer-win": "electron-builder --win --x64",
+    "build-installer-win-32": "electron-builder --win --ia32",
+    "pack": "electron-builder --dir",
+    "dist-32": "electron-builder --ia32",
+    "gh-publish": "electron-builder --x64 --win -publish always"
+    
+  },
+  "build": {
+    "appId": "com.ncodemedia.ucslems",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "publish": [
+        "github"
+      ],
+      "icon": "./logo--app.ico"
+    },
+    "nsis": {
+      "installerIcon": "./logo--app.ico",
+      "uninstallerIcon": "./logo--app.ico",
+      "uninstallDisplayName": "Uninstall UCSL EMS",
+      "license": "license.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "electron-log": "^4.4.6",
+    "electron-updater": "^6.1.1",
+    "exceljs": "^4.2.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.0",
+    "print-js": "^1.6.0",
+    "qrcode": "^1.4.4"
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.6.3"
+  }
+}

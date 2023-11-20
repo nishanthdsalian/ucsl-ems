@@ -1,0 +1,125 @@
+
+$color1:#28536B;
+$color1a:#E1E1EB;
+$color1q:rgb(12,59,85);
+$color1r:rgb(20,103,150);
+$color1tp1:rgba(0,40,170,0.1);
+$color1tp2:rgba(0,40,170,0.2);
+$color1tp3:rgba(0,40,170,0.3);
+$color1tp4:rgba(0,40,170,0.4);
+$color1tp6:rgba(0, 40, 170, 0.6);
+$color1tp5:rgba(0,40,170,0.5);
+$color1tp7:rgba(0,40,170,0.7);
+$color1tp8:rgba(0,40,170,0.8);
+
+$color2:rgb(120,88,110);
+$color2a:rgb(206,196,206);
+$color2b:rgb(77,45,67);
+$color2c:rgb(140,120,140);
+$color2d:rgb(140,100,140);
+$color2e:rgb(114,54,95);
+$color2f:rgb(110,80,100);
+$color2g:rgb(160,110,145);
+
+$color3:rgb(216,216,216); 
+$color3a:#797676;
+$color3b:rgb(196,196,196);
+$color3c:#C4C4CE;
+$color3d:rgb(200,205,210);//silver 
+$color3e:rgb(221,221,221,);
+$color3f:rgb(117,105,105); 
+$color3g:rgb(182,177,177); 
+$color3h:rgb(77,67,45);
+$color3i:rgb(210,210,210);
+$color3j:rgb(220,220,220);
+$color3k:rgb(240,240,240);
+
+
+//greens
+$color4:rgb(88,120,110);
+$color4a:rgb(186,196,186);
+$color4b:rgb(45,77,67);
+$color4c:rgb(195,205,195);
+$color4d:rgb(112,149,137);
+$color4q:rgb(118,157,30);
+$color4r:rgb(136,176,50);
+$color4el:rgba(0,170,0,0.2);
+
+$color5:rgb(26, 9, 255);
+
+$color6:rgb(185,37,37);
+$color6a:rgb(210,63,63);
+
+$color7:rgb(120,110,88);
+$color7a:rgb(182,177,177);
+
+
+$color10a:rgb(21, 170, 217);
+$color10al3:rgba(21, 170, 217,0.3);
+$color10al2:rgba(21,170,217,0.2);
+$color10b:rgb(31, 122, 162);
+$color10bl2:rgba(31, 122, 162,0.2);
+$color10bl6:rgba(31, 122, 162,0.6);
+$color10c:rgb(15,83,143);
+$color10d:rgb(20,100,155);
+$color10em:rgba(0,160,223,0.5);
+$color10f:rgb(16,67,89);
+$color10fl1:rgba(16,67,89,0.1);
+$color10fl2:rgba(16,67,89,0.2);
+$color10g:rgb(0,77,153);
+$color10h:rgb(62, 171, 218);
+$color10i:rgb(0, 153, 204);
+
+
+
+$tColor1:white;
+$tColor2:black; 
+$tColor4:rgb(0,120,0);
+
+$fSizeSysStd:pxToRem(14);
+
+
+$fColor1:invert(27%) sepia(43%) saturate(580%) hue-rotate(157deg) brightness(95%) contrast(93%); //dark blue theme
+$fColor2:invert(99%) sepia(2%) saturate(966%) hue-rotate(277deg) brightness(119%) contrast(100%); //white
+$fColor3:invert(92%) sepia(5%) saturate(328%) hue-rotate(201deg) brightness(82%) contrast(88%); //grey
+
+
+$bShadow1:0px 4px 4px rgba(0, 0, 0, 0.25);
+$bShadowIn1:inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+@function pxToRem($pixelValue){
+	@return 1rem*$pixelValue/16;
+}
+
+
+@mixin flex-c($dir){
+	display: flex;
+	flex-direction: $dir;
+	align-items:center;
+	justify-content: center;
+}
+
+
+@mixin row-equal-grid($noOfRows){
+	display:grid;
+	grid-template-rows: repeat($noOfRows,1fr);
+}
+
+@mixin column-equal-grid($noOfColumns){
+	display:grid;
+	grid-template-columns: repeat($noOfColumns,1fr);
+}
+
+@mixin two-column-grid($colWidth1,$colWidth2){
+	display:grid;
+	grid-template-columns: $colWidth1 $colWidth2;
+}
+
+@mixin two-row-grid($colHeight1,$colHeight2){
+	display:grid;
+	grid-template-rows: $colHeight1 $colHeight2;
+}
+
+
+

@@ -1,0 +1,17 @@
+#ignore ALL .log files
+*.log
+
+# ignore ALL the below files
+electron-updater.yml
+Software Info.xlsx
+
+
+# ignore ALL files in the following directory
+temp/
+node_modules/
+Reports/
+others/
+dist/
+Backup/
+
+
